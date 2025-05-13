@@ -20,7 +20,12 @@ extra_name_conversion = {  # to be continued
     "北鹰鸮": "日本鹰鸮",
     "黑额凤鹛": "黑颏凤鹛",
     "白冠燕尾": "白额燕尾",
+    "亚洲短趾百灵": "短趾百灵",
+    "蒙古短趾百灵": "中华短趾百灵",
+    "蒙古银鸥": "西伯利亚银鸥",
+    "织女银鸥": "西伯利亚银鸥",
 }
+
 
 def eb_name_to_z4_name(eb_name: str) -> str | None:
     if eb_name in extra_name_conversion:
@@ -29,10 +34,10 @@ def eb_name_to_z4_name(eb_name: str) -> str | None:
         return birdreport_chn_name_to_taxa[eb_name]["中文名"]
     return None
 
+
 name_for_specification = {  # to be continued
     "橙腹叶鹎",  # 西南_
     "金腰燕",  # 斑腰燕
-
 }
 
 
