@@ -15,20 +15,8 @@ birdreport_chn_name_to_taxa = json.load(
     open("./db/birdreport_chn_name_to_taxa.json", "r", encoding="utf-8"))
 
 
-extra_name_conversion = {  # to be continued
-    "金斑鸻": "金鸻", 
-    "北鹰鸮": "日本鹰鸮",
-    "黑额凤鹛": "黑颏凤鹛",
-    "白冠燕尾": "白额燕尾",
-    "亚洲短趾百灵": "短趾百灵",
-    "蒙古短趾百灵": "中华短趾百灵",
-    "蒙古银鸥": "西伯利亚银鸥",
-    "织女银鸥": "西伯利亚银鸥",
-    "丽色噪鹛": "红翅噪鹛",
-    "栗头地莺": "栗头树莺",
-    "喜山短翅鸫": "喜山蓝短翅鸫",
-    "蓝额长脚地鸲": "蓝额地鸲",
-}
+extra_name_conversion = json.load(
+    open("./db/extra_name_conversion.json", "r", encoding="utf-8"))
 
 
 def eb_name_to_z4_name(eb_name: str) -> str | None:
