@@ -1,0 +1,11 @@
+[project]
+name = "eb-checklist-to-birdreport"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+dependencies = [
+    "ebird-api>=4.0.0",
+    "pandas>=2.3.2",
+    "pyperclip>=1.10.0",
+    "openpyxl"
+]

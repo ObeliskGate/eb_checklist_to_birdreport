@@ -1,3 +1,0 @@
-ebird-api
-pandas
-pyperclip

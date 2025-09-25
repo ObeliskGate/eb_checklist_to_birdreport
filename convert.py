@@ -6,7 +6,7 @@ import json
 import os
 
 import pandas as pd
-from ebird.api import get_checklist, get_location
+from ebird.api.requests import get_checklist, get_location
 
 eb_species_code_to_taxa = json.load(
     open("./db/eb_species_code_to_taxa.json", "r", encoding="utf-8"))
